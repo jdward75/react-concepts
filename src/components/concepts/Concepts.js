@@ -28,8 +28,8 @@ const concepts = [
 const Concepts = () => {
   return (
     <ul className={styles.concepts}>
-      {concepts.map((concept) => {
-        return <Concept concept={concept} />;
+      {concepts.map((concept, index) => {
+        return <Concept key={index} concept={concept} />;
       })}
     </ul>
   );
